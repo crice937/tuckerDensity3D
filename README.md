@@ -4,8 +4,8 @@ This project takes the City of Tucker's dwelling unit density data and presents 
 
 ## Credits
 
-City of Tucker GIS Department
-Mapbox
+<a href="http://tuckerga.gov/" target="_blank">City of Tucker GIS Department</a>  
+<a href="https://www.mapbox.com/" target="_blank">Mapbox</a>
 
 ## License
 
