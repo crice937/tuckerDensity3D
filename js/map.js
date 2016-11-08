@@ -9,27 +9,22 @@ var map = new mapboxgl.Map({
 });
 
 map.on('load', function () {
-	map.addSource('duDensity', {
+	map.addSource('addressDen', {
 		type: 'vector',
 		url: 'mapbox://crice937.5sm2dk25'
 	});
 	map.addLayer({
 		"id": "crice937.5sm2dk25",
 		"type": "vector",
-		"source": "duDensity",
+		"source": "addressDen",
 		"source-layer": "parcel_dwellingUnit-3mizhu",
-		'filter': ['==', 'extrude', 'true'],
-        'type': 'fill',
+		'type': 'fill',
 		'paint': {
 			'fill-color': '#aaa',
 			'fill-extrude-height': {
-				'type': 'identity',
-				'property': 'dwellingUn'
+				'property': 'addressDen',
+				'type': 'identity'
 			},
-            'fill-extrude-base': {
-                'type': 'identity',
-                'property': 'dwellingUn'
-            },
 			'fill-opacity': .6
 		}
 	});
