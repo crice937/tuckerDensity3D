@@ -5,12 +5,38 @@
 
 	<script src='https://api.mapbox.com/mapbox-gl-js/v0.26.0/mapbox-gl.js'></script>
 	<link href='https://api.mapbox.com/mapbox-gl-js/v0.26.0/mapbox-gl.css' rel='stylesheet' />
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 
+	<h1 id="header">City of Tucker - 3D Density Visualization</h1>
+
 	<div id="map"></div>
 
+	<div id='zoning-legend' class='legend' style='display: none;'>
+		<h4>Zoning District</h4>
+		<div><span style='background-color: #FF0000'></span>C-1</div>
+		<div><span style='background-color: #A50F15'></span>C-2</div>
+		<div><span style='background-color: #006837'></span>HR-2</div>
+		<div><span style='background-color: #828282'></span>M</div>
+		<div><span style='background-color: #343434'></span>M-2</div>
+		<div><span style='background-color: #78C679'></span>MR-1</div>
+		<div><span style='background-color: #31A354'></span>MR-2</div>
+		<div><span style='background-color: #DF73FF'></span>MZ</div>
+		<div><span style='background-color: #C88544'></span>NS</div>
+		<div><span style='background-color: #ACB0FF'></span>O-D</div>
+		<div><span style='background-color: #657FF1'></span>O-I</div>
+		<div><span style='background-color: #FFFFCC'></span>RE</div>
+		<div><span style='background-color: #DEF0CC'></span>RSM</div>
+		<div><span style='background-color: #FFFF4A'></span>R-60</div>
+		<div><span style='background-color: #FEB24C'></span>R-75</div>
+		<div><span style='background-color: #FED976'></span>R-85</div>
+		<div><span style='background-color: #FFEDA0'></span>R-100</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src= "js/map.js"></script>
 </body>
 </html>
